@@ -3,6 +3,6 @@ package be.vdab.git;
 public class HelloGit {
 
     void helloGit() {
-        IO.println("Hello Git!");
+        IO.println("Bon appetit!");
     }
 }
