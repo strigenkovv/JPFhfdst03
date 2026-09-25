@@ -20,11 +20,27 @@ public class Cursus implements Comparable<Cursus> {
         return prijs;
     }
 
+    /*
+     * Comparable defines the natural ordering.
+     * Here courses are sorted by course number.
+     *
+     * Negative: this object comes before other.
+     * Zero: objects are equal for sorting.
+     * Positive: this object comes after other.
+     */
+
     @Override
     public int compareTo(Cursus other) {
         return Integer.compare(nummer, other.nummer);
     }
 
+    /*
+     * Two courses are equal when they have
+     * the same course number.
+     *
+     * If equals() is overridden,
+     * hashCode() must also be consistent.
+     */
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Cursus other)) {
