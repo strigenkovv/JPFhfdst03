@@ -25,8 +25,8 @@ public class Arbeider extends Werknemer {
 
     public void setUurloon(BigDecimal aUurloon) throws WerknemerException {
 
-        if (uurloon == null
-            || uurloon.compareTo(BigDecimal.valueOf(9.76)) < 0) {
+        if (aUurloon == null
+            || aUurloon.compareTo(BigDecimal.valueOf(9.76)) < 0) {
             throw new WerknemerException(
                     "Het uurloon moet minstens 9,76 euro zijn."
             );
